@@ -119,11 +119,13 @@
 ## 💻 **화면 구성**
 
 1️⃣ 로그인  
-![로그인](https://github.com/user-attachments/assets/31490370-2c9d-4e16-b5af-94a745f60c77)
+![로그인](https://github.com/user-attachments/assets/78089916-a2c4-4536-a57e-d0fd7888d14a)
 2️⃣ 회원가입
-![회원가입](https://github.com/user-attachments/assets/c40bb1c1-f105-4b3d-98e3-a8249e8b2b84)
+![회원가입](https://github.com/user-attachments/assets/fd2b718d-3c9b-42f2-8f60-d0d1e3333e23)
 3️⃣ 마이페이지 / 회원설정 / 회원탈퇴
+![mypage](https://github.com/user-attachments/assets/aa5e469a-a533-478e-951a-ca71e52398f7)
 4️⃣ 메인페이지  
+![home](https://github.com/user-attachments/assets/c311df74-cfe5-483e-86be-440e9b5b2114)
 5️⃣ 카테고리별 상품 페이지  
 6️⃣ 장바구니 / 결제페이지  
 7️⃣ 상품 상세페이지  
