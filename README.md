@@ -140,11 +140,12 @@ b# Team Project - **Casetibuy**
 
 ### 6️⃣ 결제페이지
 
-![order](https://github.com/user-attachments/assets/3ac78c85-33fe-435b-923e-44fb09d5ae75)
+![order](https://github.com/user-attachments/assets/811a58ec-e7d6-4093-81c4-a451672048ee)
 
 ### 7️⃣ 상품 상세페이지
 
-![detailProduct](https://github.com/user-attachments/assets/c865260e-9fed-47d0-9b30-68dea7ab1c92)
+![detailProduct](https://github.com/user-attachments/assets/f5fd3249-6108-4f09-85d1-f04402c796a2)
+![detailProduct2](https://github.com/user-attachments/assets/a93fc781-0bb5-486d-b6a1-32d660d9d301)
 
 ### 8️⃣ 검색 페이지
 
