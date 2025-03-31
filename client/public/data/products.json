@@ -1,0 +1,148 @@
+[
+    {
+      "id": 1,
+      "name": "케이스티파이 추천",
+      "image": "/images/iphone16pro/pink_organza_ribbon/iphone16p_pink_organza_ribbon_case_mimpact_color_skyblue1.webp",
+      "title": "Pink Organza Ribbon",
+      "model": "iPhone 16 Pro Max",
+      "series": "바운스 케이스",
+      "price": 102000
+    },
+    {
+      "id": 2,
+      "name": "케이스티파이 추천",
+      "image": "/images/iphone16pro/chrome_doodles/iphone16p_chrome_doodles_case_ring_color_purple1.webp",
+      "title": "Chrome Doodles",
+      "model": "iPhone 16 Pro Max",
+      "series": "Impact Ring Stand Case MagSafe Compatible",
+      "price": 108000
+    },
+    {
+      "id": 3,
+      "name": "케이스티파이 추천",
+      "image": "/images/iphone16pro/black_kingsnake/iphone16p_black_kingsnake_case_ring_color_black1.webp",
+      "title": "Black Kingsnake",
+      "model": "iPhone 16 Pro Max",
+      "series": "맥세이프 임팩트",
+      "price": 89000
+    },
+    {
+      "id": 4,
+      "name": "케이스티파이 추천",
+      "image": "/images/iphone16pro/black_organza_ribbon/iphone16p_black_organza_ribbon_case_mimpact_color_skyblue1.webp",
+      "title": "Black Organza Ribbon",
+      "model": "iPhone 16 Pro Max",
+      "series": "맥세이프 임팩트",
+      "price": 89000
+    },
+    {
+      "id": 5,
+      "name": "케이스티파이 추천",
+      "image": "/images/iphone16pro/pearly_heart/iphone16p_pearly_heart_case_ring_color_black1.webp",
+      "title": "Pearly Heart",
+      "model": "iPhone 16 Pro Max",
+      "series": "Impact Ring Stand Case MagSafe Compatible",
+      "price": 102000
+    },
+    {
+      "id": 6,
+      "name": "케이스티파이 추천",
+      "image": "/images/iphone16pro/denim/iphone16p_denim_case_mirror_color_blackronblack1.webp",
+      "title": "Denim",
+      "model": "iPhone 16 Pro Max",
+      "series": "맥세이프 임팩트",
+      "price": 89000
+    },
+    {
+      "id": 7,
+      "name": "케이스티파이 추천",
+      "image": "/images/iphone16pro/cross_heritage/iphone16p_cross_heritage_case_mimpact_color_skyblue1.webp",
+      "title": "Cross Heritage",
+      "model": "iPhone 16 Pro Max",
+      "series": "맥세이프 임팩트",
+      "price": 89000
+    },
+    {
+      "id": 8,
+      "name": "신상품",
+      "image": "/images/iphone16pro/label_sticker_design/iphone16p_label_sticker_design_case_impact_color_purple1.webp",
+      "title": "Label Sticker Design 2",
+      "model": "iPhone 16 Pro Max",
+      "series": "바운스 케이스",
+      "price": 89000
+    },
+    {
+      "id": 9,
+      "name": "신상품",
+      "image": "/images/iPhone/Daisy by Katie-s Collective/iphone16pro_daisy_by_katie-s_collective_case_bounce_color_black1.png",
+      "title": "Daisy by Katie-s Collective",
+      "model": "iPhone 16 Pro Max",
+      "series": "맥세이프 호환 울트라 바운스 케이스",
+      "price": 89000
+    },
+    {
+      "id": 10,
+      "name": "신상품",
+      "image": "/images/iPhone/PANG 2024 NEW YEAR!/iphone16pro_pang_2024_new_year!_case_bounce_color_skyblue1.png",
+      "title": "PANG 2024 NEW YEAR!",
+      "model": "iPhone 16 Pro Max",
+      "series": "바운스 케이스",
+      "price": 89000
+    },
+    {
+      "id": 11,
+      "name": "신상품",
+      "image": "/images/iPhone/WRAPPED IN A BOW/iphone16pro_wrapped_in_a_bow_case_macsafe_mirror_color_black1.png",
+      "title": "WRAPPED IN A BOW",
+      "model": "Impact Ring Stand Case MagSafe",
+      "series": "맥세이프 임팩트",
+      "price": 89000
+    },
+    {
+      "id": 12,
+      "name": "인기",
+      "image": "/images/iPhone/Skater JOHN -Hello my friend 04/iphone16pro_skater_JOHN_Hello_my_friend_04_case_impact_color_black1.png",
+      "title": "Skate JOHN -Hello my friend 04",
+      "model": "iPhone 16 Pro Max",
+      "series": "맥세이프 임팩트",
+      "price": 89000
+    },
+    {
+      "id": 13,
+      "name": "인기",
+      "image": "/images/iPhone/Alright hold on!/iphone16pro_alright_hold_on!_case_impact_color_black1.png",
+      "title": "Alright hold on !",
+      "model": "iPhone 16 Pro Max",
+      "series": "클리어 케이스",
+      "price": 89000
+    },
+    {
+      "id": 14,
+      "name": "인기",
+      "image": "/images/iPhone/Sweetheart Mix/iphone16pro_sweetheart_mix_case_macsafe_mirror_color_black1.png",
+      "title": "Sweetheart Mix",
+      "model": "iPhone 16 Pro Max",
+      "series": "맥세이프 호환 미러 케이스",
+      "price": 89000
+    },
+    {
+      "id": 15,
+      "name": "인기",
+      "image": "/images/iPhone/casetify/iphone16pro_casetify_case_macsafe_impact_color_skyblue1.png",
+      "title": "Casetify",
+      "model": "iPhone 16 Pro Max",
+      "series": "임팩트 케이스",
+      "price": 89000
+    },
+    {
+      "id": 16,
+      "name": "인기",
+      "image": "/images/iPhone/NANG 2024 NEW YEAR!/iphone16pro_nang_2024_new_year!_case_bounce_color_black1.png",
+      "title": "NANG 2024 NEW YEAR!",
+      "model": "iPhone 16 Pro Max",
+      "series": "임팩트 케이스",
+      "price": 89000
+    }
+    
+  ]
+  

@@ -1,0 +1,397 @@
+{
+    "filters": [
+      {
+        "category": "기종",
+        "subcategories": [
+          {
+            "name": "모든 기종",
+              "options": [
+                {
+                  "brand": "아이폰",
+                    "models": [
+                      { "id": 1, "name": "아이폰 16 Pro Max" },
+                      { "id": 2, "name": "아이폰 16 Pro" },
+                      { "id": 3, "name": "아이폰 16 Plus" },
+                      { "id": 4, "name": "아이폰 16" },
+                      { "id": 5, "name": "아이폰 15 Pro" },
+                      { "id": 6, "name": "아이폰 15 Pro Max" },
+                      { "id": 7, "name": "아이폰 15 Plus" },
+                      { "id": 8, "name": "아이폰 15" },
+                      { "id": 9, "name": "아이폰 14 Pro" },
+                      { "id": 10, "name": "아이폰 14 Pro Max" },
+                      { "id": 11, "name": "아이폰 14 Plus" },
+                      { "id": 12, "name": "아이폰 14" },
+                      { "id": 13, "name": "아이폰 13 Pro" },
+                      { "id": 14, "name": "아이폰 13 Pro Max" },
+                      { "id": 15, "name": "아이폰 13" },
+                      { "id": 16, "name": "아이폰 13 Mini" },
+                      { "id": 17, "name": "아이폰 12 Pro" },
+                      { "id": 18, "name": "아이폰 12 Pro Max" },
+                      { "id": 19, "name": "아이폰 12" },
+                      { "id": 20, "name": "아이폰 12 Mini" },
+                      { "id": 21, "name": "아이폰 11 Pro Max" },
+                      { "id": 22, "name": "아이폰 11 Pro" },
+                      { "id": 23, "name": "아이폰 11" },
+                      { "id": 24, "name": "아이폰 XS Max" },
+                      { "id": 25, "name": "아이폰 XS" },
+                      { "id": 26, "name": "아이폰 XR" },
+                      { "id": 27, "name": "아이폰 SE (2022)" },
+                      { "id": 28, "name": "아이폰 X" }
+                  ]
+                },
+                {
+                  "brand": "삼성 갤럭시 S 시리즈",
+                    "models": [
+                      { "id": 101, "name": "갤럭시 S25 울트라" },
+                      { "id": 102, "name": "갤럭시 S25" },
+                      { "id": 103, "name": "갤럭시 S25+" },
+                      { "id": 104, "name": "갤럭시 S24 울트라" },
+                      { "id": 105, "name": "갤럭시 S24" },
+                      { "id": 106, "name": "갤럭시 S24+" },
+                      { "id": 107, "name": "갤럭시 S24 FE" },
+                      { "id": 108, "name": "갤럭시 S23 울트라" },
+                      { "id": 109, "name": "갤럭시 S23" },
+                      { "id": 110, "name": "갤럭시 S23+" },
+                      { "id": 111, "name": "갤럭시 S23 FE" },
+                      { "id": 112, "name": "갤럭시 S22 울트라" },
+                      { "id": 113, "name": "갤럭시 S22" },
+                      { "id": 114, "name": "갤럭시 S22+" },
+                      { "id": 115, "name": "갤럭시 S21" },
+                      { "id": 116, "name": "갤럭시 S20 울트라" }
+                  ]
+                },
+                {
+                  "brand": "삼성 갤럭시 Z 시리즈",
+                    "models": [
+                      { "id": 201, "name": "갤럭시 Z 플립6" },
+                      { "id": 202, "name": "갤럭시 Z 폴드6" },
+                      { "id": 203, "name": "갤럭시 Z 플립5" },
+                      { "id": 204, "name": "갤럭시 Z 폴드5" },
+                      { "id": 205, "name": "갤럭시 Z 플립4" },
+                      { "id": 206, "name": "갤럭시 Z 폴드4" },
+                      { "id": 207, "name": "갤럭시 Z 플립3" }
+                  ]
+                },
+                {
+                  "brand": "구글 픽셀",
+                    "models": [
+                      { "id": 301, "name": "Pixel 9 Pro" },
+                      { "id": 302, "name": "Pixel 9 Pro XL" },
+                      { "id": 303, "name": "Pixel 9" },
+                      { "id": 304, "name": "Pixel 9 Pro Fold" },
+                      { "id": 305, "name": "Pixel 8 Pro" },
+                      { "id": 306, "name": "Pixel 8" },
+                      { "id": 307, "name": "Pixel Fold" },
+                      { "id": 308, "name": "Pixel 7 Pro" },
+                      { "id": 309, "name": "Pixel 7" },
+                      { "id": 310, "name": "Pixel 6 Pro" },
+                      { "id": 311, "name": "Pixel 6" }
+                  ]
+                }
+              ]
+            },
+          {
+            "name": "워치",
+            "options": ["애플 워치"]
+          },
+          {
+            "name": "이어버드",
+            "options": ["에어팟", "갤럭시 버즈"]
+          },
+          {
+            "name": "아이패드",
+              "models": [
+                { "id": 401, "name": "아이패드 에어 11인치 (6세대)" },
+                { "id": 402, "name": "아이패드 에어 13인치 (M2 모델)" },
+                { "id": 403, "name": "아이패드 프로 11인치 (M4 모델)" },
+                { "id": 404, "name": "아이패드 프로 13인치 (M2 모델)" },
+                { "id": 405, "name": "아이패드 에어 (4세대/5세대)" },
+                { "id": 406, "name": "아이패드 프로 11\" (3세대/4세대)" },
+                { "id": 407, "name": "아이패드 프로 12.9\" (5세대/6세대)" },
+                { "id": 408, "name": "아이패드 미니 (A17 Pro/6세대)" },
+                { "id": 409, "name": "아이패드 10.9\" (10세대)" }
+            ]
+          },
+          {
+            "name": "맥북",
+              "models": [
+                { "id": 501, "name": "맥북 에어 15인치 (2023 - 2024)" },
+                { "id": 502, "name": "맥북 에어 13인치 (2022 / 2024)" },
+                { "id": 503, "name": "맥북 프로 14\" (2021 / 2023)" },
+                { "id": 504, "name": "맥북 프로 16\" (2021 / 2023)" },
+                { "id": 505, "name": "맥북 프로 13\" (2020 / 2022)" },
+                { "id": 506, "name": "맥북 에어 13\" (2018 - 2020)" },
+                { "id": 507, "name": "맥북 에어 13\" (2010 - 2017)" }
+            ]
+          },
+          {
+            "name": "에어태그 케이스",
+              "options": ["에어태그 케이스"]
+          }
+        ]
+      },
+      {
+        "category": "액세서리",
+          "subcategories": [
+          {
+            "options": [
+              { "id": 601, "name": "액정 보호 필름" },
+              { "id": 602, "name": "폰스트랩" },
+              { "id": 603, "name": "비즈 스트랩" },
+              { "id": 604, "name": "맥세이프 카드 지갑" },
+              { "id": 605, "name": "마그네틱 무선 충전기" },
+              { "id": 606, "name": "Snappy™ 카드홀더 스탠드" },
+              { "id": 607, "name": "Snappy™ 그립 스탠드" },
+              { "id": 608, "name": "파워 뱅크" },
+              { "id": 609, "name": "케이블" },
+              { "id": 610, "name": "비즈 참" },
+              { "id": 611, "name": "카라비너" },
+              { "id": 612, "name": "2-in-1 충전 스탠드" },
+              { "id": 613, "name": "차량용 무선 충전기" },
+              { "id": 614, "name": "고속 충전기" },
+              { "id": 615, "name": "슬링백" },
+              { "id": 616, "name": "에어태그 링 케이스" },
+              { "id": 617, "name": "스테인리스 스틸 텀블러" }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "시리즈",
+          "subcategories": [
+          {
+          "options": [
+            { "id": 700, "name": "바운스 시리즈" },
+            { "id": 701, "name": "임팩트 시리즈" },
+            { "id": 702, "name": "링 시리즈" },
+            { "id": 703, "name": "미러 시리즈" },
+            { "id": 704, "name": "액정 & 카메라 프로텍터" },
+            { "id": 705, "name": "Essentials by CASETiFY™" },
+            { "id": 706, "name": "BioVeg & 페블 레더 시리즈" },
+            { "id": 707, "name": "Push-In 시리즈" },
+            { "id": 708, "name": "PowerThru by CASETiFY™" },
+            { "id": 709, "name": "Snappy 시리즈" },
+            { "id": 710, "name": "스트랩" },
+            { "id": 711, "name": "카라비너 & 키체인 참" },
+            { "id": 712, "name": "컬렉터 에디션 시리즈" }
+          ]
+          }
+        ]
+      },
+      {
+        "category": "컬렉션",
+          "subcategories": [
+          {
+            "options": [
+              { "id": 800, "name": "베스트셀러" },
+              { "id": 801, "name": "NEW 프린트" },
+              { "id": 802, "name": "발렌타인데이 컬렉션" },
+              { "id": 803, "name": "덱스's CHOiCE" },
+              { "id": 804, "name": "디지털 아트" },
+              { "id": 805, "name": "발레코어" },
+              { "id": 806, "name": "Very Berry Cherry Collection" },
+              { "id": 807, "name": "이달의 Pick!" },
+              { "id": 808, "name": "아티스트 갤럭시 디자인" },
+              { "id": 809, "name": "Featured Prints" },
+              { "id": 810, "name": "CASETiFY Inspo Highlights" },
+              { "id": 811, "name": "Casetify Inspo" },
+              { "id": 812, "name": "Native Australia" }
+            ]
+          }
+    ]
+    },
+      {
+        "category": "커스텀",
+        "subcategories": [
+          {
+          "options": ["커스텀"]
+        }
+      ]
+    },
+      {
+        "category": "Co-Lab",
+        "subcategories": [
+          {
+          "options": [
+            { "id": 900, "name": "컬렉션 모두 보기" },
+            { "id": 901, "name": "신데렐라" },
+            { "id": 902, "name": "디젤 + 케이스티파이" },
+            { "id": 903, "name": "판다 프렌즈 @ 오션 파크" },
+            { "id": 904, "name": "톰과 제리" },
+            { "id": 905, "name": "앤디 워홀" },
+            { "id": 906, "name": "산리오캐릭터즈 - 마이멜로디" },
+            { "id": 907, "name": "칠가이 (Chill Guy)" },
+            { "id": 908, "name": "SEVENTEEN" },
+            { "id": 909, "name": "오트사이드" },
+            { "id": 910, "name": "무민" },
+            { "id": 911, "name": "치이카와" },
+            { "id": 912, "name": "오징어 게임" },
+            { "id": 913, "name": "BLVCK" },
+            { "id": 914, "name": "13DE MARZO" },
+            { "id": 915, "name": "산리오캐릭터즈 - 쿠로미" },
+            { "id": 916, "name": "디즈니 칩과 데일" },
+            { "id": 917, "name": "겨울왕국" },
+            { "id": 918, "name": "기동전사 건담" },
+            { "id": 919, "name": "립앤딥" },
+            { "id": 920, "name": "넷플릭스" },
+            { "id": 921, "name": "살바도르 달리" },
+            { "id": 922, "name": "해리 포터™" },
+            { "id": 923, "name": "위키드" },
+            { "id": 924, "name": "메종 키츠네" },
+            { "id": 925, "name": "LAKH" },
+            { "id": 926, "name": "아케인" },
+            { "id": 927, "name": "팝마트 - 디무 월드" },
+            { "id": 928, "name": "Bunnies By The Bay" },
+            { "id": 929, "name": "배트맨™" },
+            { "id": 930, "name": "산리오 캐릭터즈 - 시나모롤" },
+            { "id": 931, "name": "허프(HUF)" },
+            { "id": 932, "name": "마블 - 위 아 그루트(We Are Groot)" },
+            { "id": 933, "name": "루브르 박물관" },
+            { "id": 934, "name": "프렌즈" },
+            { "id": 935, "name": "오베이" },
+            { "id": 936, "name": "대영박물관" },
+            { "id": 937, "name": "PHANTACi" },
+            { "id": 938, "name": "포피 리씨맨" },
+            { "id": 939, "name": "원피스" },
+            { "id": 940, "name": "곰돌이 푸" },
+            { "id": 941, "name": "데드풀 x 울버린" },
+            { "id": 942, "name": "소니엔젤" },
+            { "id": 943, "name": "NCT DREAM" },
+            { "id": 944, "name": "타이완 비어" },
+            { "id": 945, "name": "주술회전" },
+            { "id": 946, "name": "Carnival" },
+            { "id": 947, "name": "코카콜라" },
+            { "id": 948, "name": "산리오캐릭터즈 - 헬로키티" },
+            { "id": 949, "name": "Pestle & Mortar Clothing" },
+            { "id": 950, "name": "디즈니 도날드 덕" },
+            { "id": 951, "name": "죠죠의 기묘한 모험: 스타더스트 크루세이더즈" },
+            { "id": 952, "name": "국립중앙박물관" },
+            { "id": 953, "name": "산리오캐릭터즈 - 폼폼푸린" },
+            { "id": 954, "name": "도라에몽" },
+            { "id": 955, "name": "WON SOJU x CASETiFY" },
+            { "id": 956, "name": "비욘드 더 바인스" },
+            { "id": 957, "name": "산리오캐릭터즈 - 포차코" },
+            { "id": 958, "name": "마블 아이언맨" },
+            { "id": 959, "name": "잔망 루피" },
+            { "id": 960, "name": "나루토" },
+            { "id": 961, "name": "디즈니 프린세스" },
+            { "id": 962, "name": "메이저 리그 베이스볼" },
+            { "id": 963, "name": "파워퍼프걸" },
+            { "id": 964, "name": "디즈니 빌런" },
+            { "id": 965, "name": "기묘한 이야기" },
+            { "id": 966, "name": "스파이더맨" },
+            { "id": 967, "name": "디즈니 미키 마우스와 친구들" },
+            { "id": 968, "name": "디즈니 & 픽사 몬스터 주식회사" },
+            { "id": 969, "name": "에반게리온" },
+            { "id": 970, "name": "라인프렌즈 미니니" },
+            { "id": 971, "name": "릭 앤 모티" },
+            { "id": 972, "name": "낫싱(Nothing)" },
+            { "id": 973, "name": "디즈니 x 케이스티파이 - 이상한 나라의 앨리스" },
+            { "id": 974, "name": "NBA" },
+            { "id": 975, "name": "디즈니 & 픽사 토이 스토리" },
+            { "id": 976, "name": "만달로리안™" },
+            { "id": 977, "name": "장미셸 바스키아" },
+            { "id": 978, "name": "디즈니 x 케이스티파이 - 라이온 킹 컬렉션" },
+            { "id": 979, "name": "스누피와 친구들" },
+            { "id": 980, "name": "스폰지밥" },
+            { "id": 981, "name": "바비" },
+            { "id": 982, "name": "미니언즈" },
+            { "id": 983, "name": "Ketnipz" },
+            { "id": 984, "name": "스타워즈™" },
+            { "id": 985, "name": "디즈니 팀 버튼의 크리스마스 악몽" }
+          ]
+      }
+    ]
+    },
+      {
+        "category": "아티스트",
+          "subcategories": [
+          {
+          "options": [
+            { "id": 1001, "name": "Lucia Pham" },
+            { "id": 1002, "name": "Lulu the Piggy" },
+            { "id": 1003, "name": "말로컴기버" },
+            { "id": 1004, "name": "노리타케(Noritake)" },
+            { "id": 1005, "name": "피카루카(Pikaruco)" },
+            { "id": 1006, "name": "마르티나 칼비(Martina Calvi)" },
+            { "id": 1007, "name": "최제훈 작가" },
+            { "id": 1008, "name": "BuZMa" },
+            { "id": 1009, "name": "마쓰이(Matsui)" },
+            { "id": 1010, "name": "남성이" },
+            { "id": 1011, "name": "Constant Bagel Therapy" },
+            { "id": 1012, "name": "Peep" },
+            { "id": 1013, "name": "프레디퍼디" },
+            { "id": 1014, "name": "Gonhata" },
+            { "id": 1015, "name": "Kaigo" },
+            { "id": 1016, "name": "mikko Illustrations" },
+            { "id": 1017, "name": "깨어진 흙 x 케이스티파이" },
+            { "id": 1018, "name": "프레즈 x 케이스티파이: 사이먼 후지와라(Simon Fujiwara)" }
+          ]
+      }
+    ]
+    },
+      {
+        "category": "인플루언서 컬렉션",
+          "subcategories": [
+          {
+          "options": [
+            { "id": 2001, "name": "로리아" },
+            { "id": 2002, "name": "로지 맥미쉘(Rosy McMichael)" },
+            { "id": 2003, "name": "Sheep Baudelaire" },
+            { "id": 2004, "name": "RETEM03" },
+            { "id": 2005, "name": "KYUBI" },
+            { "id": 2006, "name": "안토넬라 캘리조" },
+            { "id": 2007, "name": "ALISHA MARIE" },
+            { "id": 2008, "name": "Jeff Satur" },
+            { "id": 2009, "name": "Connie Davalos" },
+            { "id": 2010, "name": "Orion Carloto" },
+            { "id": 2011, "name": "Dylan Conrique" },
+            { "id": 2012, "name": "Summer McKeen" },
+            { "id": 2013, "name": "Style By Deni" },
+            { "id": 2014, "name": "Pia Mia" },
+            { "id": 2015, "name": "Fer Rivas" },
+            { "id": 2016, "name": "Pomato" },
+            { "id": 2017, "name": "Teresuch" }
+          ]
+      }
+      ]
+    },
+      {
+        "category": "프린트 패턴",
+          "subcategories": [
+          {
+          "options": [
+            { "id": 3001, "name": "동물" },
+            { "id": 3002, "name": "강아지" },
+            { "id": 3003, "name": "사랑" },
+            { "id": 3004, "name": "스티커" },
+            { "id": 3005, "name": "패턴" },
+            { "id": 3006, "name": "문구" },
+            { "id": 3007, "name": "꽃" },
+            { "id": 3008, "name": "고양이" },
+            { "id": 3009, "name": "하트" }
+          ]
+      }
+    ]
+    },
+      {
+        "category": "프린트 스타일",
+          "subcategories": [
+          {
+            "options": [
+              { "id": 4001, "name": "카툰" },
+              { "id": 4002, "name": "타이포그래피" },
+              { "id": 4003, "name": "모노크롬" },
+              { "id": 4004, "name": "Y2K" },
+              { "id": 4005, "name": "스트릿 아트" },
+              { "id": 4006, "name": "미니멀" },
+              { "id": 4007, "name": "미술" },
+              { "id": 4008, "name": "팝 아트" },
+              { "id": 4009, "name": "추상적" },
+              { "id": 4010, "name": "애니메이션" }
+            ]
+          }
+        ]
+      }
+  ]
+}
