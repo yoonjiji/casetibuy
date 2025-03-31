@@ -118,19 +118,26 @@ b# Team Project - **Casetibuy**
 
 ## 💻 **화면 구성**
 
-1️⃣ 로그인 / 회원가입 </br>
-![로그인 / 회원가입](https://github.com/user-attachments/assets/da88b954-8a38-44ba-9010-f3d491710650) </br>
+### 1️⃣ 로그인 / 회원가입
 
-2️⃣ 마이페이지 / 회원설정 / 회원탈퇴 </br>
-![mypage](https://github.com/user-attachments/assets/aa5e469a-a533-478e-951a-ca71e52398f7) </br>
+![로그인 / 회원가입](https://github.com/user-attachments/assets/cedb0aee-cc50-4bb1-b4a2-846bfe6a481e)
 
-3️⃣ 메인페이지 </br>
-![home](https://github.com/user-attachments/assets/c311df74-cfe5-483e-86be-440e9b5b2114)</br>
+### 2️⃣ 마이페이지 / 회원설정 / 회원탈퇴
 
-4️⃣ 카테고리별 상품 페이지  
-5️⃣ 장바구니 / 결제페이지
-6️⃣ 상품 상세페이지
-7️⃣ 검색 페이지
-8️⃣
+![mypage](https://github.com/user-attachments/assets/845777a8-f262-4e6f-9dda-7632e10990a0)
+
+### 3️⃣ 메인페이지
+
+![home](https://github.com/user-attachments/assets/c311df74-cfe5-483e-86be-440e9b5b2114)
+
+### 4️⃣ 카테고리별 상품 페이지
+
+![productList](https://github.com/user-attachments/assets/b0fb0a25-cb46-4591-9a09-baaafcfea395)
+
+### 5️⃣ 장바구니 / 결제페이지
+
+### 6️⃣ 상품 상세페이지
+
+### 7️⃣ 검색 페이지
 
 ---
