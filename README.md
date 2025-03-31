@@ -134,10 +134,20 @@ b# Team Project - **Casetibuy**
 
 ![productList](https://github.com/user-attachments/assets/b0fb0a25-cb46-4591-9a09-baaafcfea395)
 
-### 5️⃣ 장바구니 / 결제페이지
+### 5️⃣ 장바구니
 
-### 6️⃣ 상품 상세페이지
+![cart](https://github.com/user-attachments/assets/91100839-7c0e-4ccf-b83e-b1ae90ebc471)
 
-### 7️⃣ 검색 페이지
+### 6️⃣ 결제페이지
+
+![order](https://github.com/user-attachments/assets/3ac78c85-33fe-435b-923e-44fb09d5ae75)
+
+### 7️⃣ 상품 상세페이지
+
+![detailProduct](https://github.com/user-attachments/assets/c865260e-9fed-47d0-9b30-68dea7ab1c92)
+
+### 8️⃣ 검색 페이지
+
+![search](https://github.com/user-attachments/assets/be7b8264-c377-4e43-a0bf-6250ae52a11d)
 
 ---
