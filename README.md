@@ -3,7 +3,7 @@
 > **Casetify**를 벤치마킹하여 구현한 쇼핑몰 팀 프로젝트입니다.  
 > **React + Node.js + MySQL** 기반의 **풀스택 SPA 쇼핑몰**을 구현하며, 클라이언트-서버-DB 간의 유기적인 연결을 중점으로 개발했습니다.
 
-🔗 [배포 링크 바로가기](http://your-deploy-url.com)
+🔗 [배포 링크 바로가기](http://casetibuy-project.s3-website.ap-northeast-2.amazonaws.com/)
 
 ---
 
@@ -104,9 +104,61 @@
 
 ---
 
-## 🗂️ **ERD / 메뉴 구조도**
+## 🗂️ **ERD / 폴더 구조도 / 다이어그램**
 
-> _※ ERD와 메뉴 트리 이미지 삽입 위치_
+### 💾 **ERD**
+
+![db_diagram](https://github.com/user-attachments/assets/1c2fe5b8-78b7-4d0b-a7d3-6a33924227d7)
+
+### 🗂️ **폴더 구조도**
+
+```csharp
+├── .vscode/
+│   └── settings.json
+├── client/         # 프론트엔드 (React)
+│   ├── public/
+│   └── src/
+│       ├── component/         # 재사용 컴포넌트
+│       │   ├── common/
+│       │   └── layout/
+│       ├── context/           # React Context API
+│       │   ├── SlideContext.js
+│       │   └── ThemeContext.js
+│       ├── hooks/             # Custom hooks
+│       │   └── useSlide.js
+│       ├── pages/             # 각 페이지
+│       │   ├── DetailProduct.jsx
+│       │   └── Home.jsx
+│       ├── style/             # 스타일 모듈
+│       ├── App.js
+│       ├── index.js
+│       └── ...
+├── key/            # 민감 정보 (로컬 API 키 등)
+│   └── ...
+├── server/         # 백엔드 (Express)
+│   ├── controller/     # 요청 처리 로직
+│   │   └── cartController.js
+│   ├── repository/     # DB 접근
+│   │   └── cartRepository.js
+│   ├── router/         # API 라우팅
+│   │   └── cartRouter.js
+│   ├── service/        # 비즈니스 로직 (예상)
+│   ├── config/         # DB 연결, 환경 설정 (예상)
+│   ├── middleware/     # 인증, 에러 핸들링 (예상)
+│   ├── upload_files/   # 업로드된 파일 저장 디렉토리
+│   ├── server.js       # Express 서버 진입점
+│   └── package.json
+├── sql/
+│   └── casetibuy_product_dump.sql  # DB 초기 데이터
+├── .gitignore
+├── README.md
+├── package-lock.json
+└── package.json
+```
+
+### 🖼 **다이어그램**
+
+![diagram](https://github.com/user-attachments/assets/f09ad0c1-70bc-4f4c-b75e-a278db135c92)
 
 ---
 
