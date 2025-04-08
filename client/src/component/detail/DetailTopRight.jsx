@@ -10,7 +10,6 @@ import { useDetail } from "../../hooks/useDetail";
 export default function DetailTopRight({ detail, addCartItem, detailImage, }) {
   const { currentCase } = useContext(DetailContext);
   const { hasMatchingDetailImage } = useDetail();
-  console.log(detail.kinds);
 
   return (
     <div className="sticky top-12 self-start w-[370px] lg:w-[533px]">

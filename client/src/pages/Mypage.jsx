@@ -1,4 +1,3 @@
-// src/pages/Mypage.jsx
 import React, { useContext, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping, faGear, faArrowRightFromBracket } from "@fortawesome/free-solid-svg-icons";

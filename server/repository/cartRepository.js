@@ -44,14 +44,9 @@ export const addCart = async ({ id, cartList }) => {
         item.image ?? "이미지 없음",
         item.price ?? 0,
       ];
-      // <<< 지혜 / 추가 : item.image >>>
-
-      console.log("[addCart] DB 저장 값:", values);
-
-      // <<< 지혜 / 추가 : image 컬럼 추가 >>>
       const sql = `
-insert into casetibuy_cart(qty, id, pid, kinds, cname, color, caseType, image, price, cdate)
-                        values(?, ?, ?, ?, ?, ?, ?, ?, ?, now());
+                  insert into casetibuy_cart(qty, id, pid, kinds, cname, color, caseType, image, price, cdate)
+                  values(?, ?, ?, ?, ?, ?, ?, ?, ?, now());
                 `;
 
       const [result] = await db.execute(sql, values); //Promise형태로 실행
@@ -59,9 +54,7 @@ insert into casetibuy_cart(qty, id, pid, kinds, cname, color, caseType, image, p
     })
   );
   result_rows = result.reduce((acc, cur) => acc + cur, 0);
-
-  console.log(result_rows);
-
+  
   return { result_rows: result_rows };
 };
 

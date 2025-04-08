@@ -80,9 +80,6 @@ export default function Header() {
 
   // 검색 실행 함수 (SearchModal -> onSearch)
   const handleSearch = (search) => {
-    console.log("검색어:", search);
-    // 여기서 검색 로직 수행 (API 호출 등)
-    
     setIsSearchOpen(false);
   };
 
@@ -97,46 +94,49 @@ export default function Header() {
 
       {/* 헤더 영역 */}
       <div className="absolute z-30 w-full bg-transparent">
-        <div className="relative flex items-center justify-between px-32 h-66">
-          <div className="flex gap-20">
-            <button
-              type="button"
-              onClick={() => setShowSeries((prev) => !prev)}
-            >
-              <FontAwesomeIcon
-                className={`w-24 h-24 ${
-                  showSeries
-                    ? "text-black"
-                    : iconColor === "white"
-                    ? "text-white"
-                    : "text-black"
-                }`}
-                icon={faBars}
-              />
-            </button>
-            {/* 검색 아이콘 클릭 시 모달 오픈 */}
-            <button
-              type="button"
-              onClick={() => setIsSearchOpen(true)}
-            >
-              <FontAwesomeIcon
-                className={`w-24 h-24 ${
-                  showSeries
-                    ? "text-black"
-                    : iconColor === "white"
-                    ? "text-white"
-                    : "text-black"
-                }`}
-                icon={faMagnifyingGlass}
-              />
-            </button>
-          </div>
+        <div className={`relative flex items-center ${(location.pathname !=='/login') ?'justify-between':'justify-center'  } px-32 h-66`}>
+          {
+            (location.pathname !=='/login') &&
+            <div className="flex gap-20">
+              <button
+                type="button"
+                onClick={() => location.pathname !== "/login" && setShowSeries((prev) => !prev)}
+              >
+                <FontAwesomeIcon
+                  className={`w-24 h-24 ${showSeries
+                      ? "text-black"
+                      : iconColor === "white"
+                        ? "text-white"
+                        : "text-black"
+                    }`}
+                  icon={faBars}
+                />
+              </button>
+              {/* 검색 아이콘 클릭 시 모달 오픈 */}
+              <button
+                type="button"
+                onClick={() => setIsSearchOpen(true)}
+              >
+                <FontAwesomeIcon
+                  className={`w-24 h-24 ${showSeries
+                      ? "text-black"
+                      : iconColor === "white"
+                        ? "text-white"
+                        : "text-black"
+                    }`}
+                  icon={faMagnifyingGlass}
+                />
+              </button>
+            </div>
+          }
           <Link to="/" className="h-40 w-120">
             <img
-              src="https://cdn.casetify.com/img/ui/casetify-logo.png"
+              src="/images/casetibuy-logo.png"
               alt="Casetify 로고"
             />
           </Link>
+            {
+              (location.pathname !=='/login') &&
           <div className="flex gap-20">
             <div
               className="relative"
@@ -150,13 +150,12 @@ export default function Header() {
                   : { onClick: toggleDropdown })}
               >
                 <FontAwesomeIcon
-                  className={`w-24 h-24 py-15 ${
-                    showSeries
+                  className={`w-24 h-24 py-15 ${showSeries
                       ? "text-black"
                       : iconColor === "white"
-                      ? "text-white"
-                      : "text-black"
-                  }`}
+                        ? "text-white"
+                        : "text-black"
+                    }`}
                   icon={faUser}
                 />
               </button>
@@ -186,30 +185,18 @@ export default function Header() {
                       </button>
                     </li>
                   )}
-                  {!isLoggedIn && (
-                    <li>
-                      <Link
-                        to="/login"
-                        className="block px-4 py-2 hover:text-grayph text-14"
-                        onClick={() => setIsDropdownOpen(false)}
-                      >
-                        로그인
-                      </Link>
-                    </li>
-                  )}
                 </ul>
               )}
             </div>
             <div className="flex gap-2">
               <button type="button" onClick={toggleCart} className="relative">
                 <FontAwesomeIcon
-                  className={`w-24 h-24 ${
-                    showSeries
+                  className={`w-24 h-24 ${showSeries
                       ? "text-black"
                       : iconColor === "white"
-                      ? "text-white"
-                      : "text-black"
-                  }`}
+                        ? "text-white"
+                        : "text-black"
+                    }`}
                   icon={faCartShopping}
                 />
               </button>
@@ -220,9 +207,10 @@ export default function Header() {
               )}
             </div>
           </div>
+            }
         </div>
       </div>
-      {location.pathname !== "/homelist" && (
+      {location.pathname !== "/products" && (
         <div
           className="w-full h-full overflow-hidden transition-all duration-700 ease-in-out origin-top bg-opacity-90"
           style={{ maxHeight: showSeries ? "600px" : "0px" }}

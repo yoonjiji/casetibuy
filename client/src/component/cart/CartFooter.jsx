@@ -1,4 +1,3 @@
-// CartFooter 컴포넌트 수정
 import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { useCart } from "../../hooks/useCart.js";

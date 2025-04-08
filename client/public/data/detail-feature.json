@@ -413,22 +413,6 @@
         "price": 70000,
         "protective": "100%",
         "weight": "75%",
-        "colorImg": [
-            {
-                "black": [
-                    "/images/iphone16pro/common/iphone16p_common_side_case_bounce_color_black.png",
-                    "/images/iphone16pro/common/iphone16p_common_back_case_bounce_color_black.jpg"
-                ],
-                "pink": [
-                    "/images/iphone16pro/common/iphone16p_common_side_case_bounce_color_pink.png",
-                    "/images/iphone16pro/common/iphone16p_common_back_case_bounce_color_pink.jpg"
-                ],
-                "babyblue": [
-                    "/images/iphone16pro/common/iphone16p_common_side_case_bounce_color_babyblue.png",
-                    "/images/iphone16pro/common/iphone16p_common_back_case_bounce_color_babyblue.jpg"
-                ]
-            }
-        ],
         "feature": [
             {
                 "image": "/images/detail/airpodmax/feature/1.png",

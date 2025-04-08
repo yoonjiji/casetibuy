@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useContext } from "react";
 import { AuthContext } from "../context/AuthContext.js";
 import useOrder from "../hooks/useOrder.js";
+import { useDetail } from "../hooks/useDetail.js";
 import SeriesItem from "./product/SeriesItem.jsx";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import useColorScheme from "../hooks/useColorScheme.js";
@@ -9,6 +10,7 @@ import { useNavigate } from "react-router-dom";
 export default function OrderList() {
     const { isLoggedIn } = useContext(AuthContext);
     const { getOrderList } = useOrder();
+    const { parseCaseAndColor } = useDetail();
     const [orderGroups, setOrderGroups] = useState([]);
     const getColorScheme = useColorScheme();
     const navigate = useNavigate();
@@ -40,13 +42,6 @@ export default function OrderList() {
     return (
         <div className="flex flex-col gap-8">
             <h2 className="font-bold text-32 mb-30">주문</h2>
-            {/* <div className="flex gap-10 mb-10">
-                <span className="px-20 py-10 text-white bg-black border rounded-full">
-                    모든 주문
-                </span>
-                <span className="px-20 py-10 border rounded-full">출고 완료</span>
-            </div> */}
-
             {orderGroups.map((orderGroup) => {
                 const orderInfo = orderGroup[0];
                 return (
@@ -56,17 +51,6 @@ export default function OrderList() {
                     >
                         {/* 주문 정보 */}
                         <div className="mb-4">
-                            <li className="flex items-center justify-between">
-                                <span className="mb-16 font-bold">
-                                    {/* 주문 현황 : <span className="font-bold">{orderInfo.order_status}</span> */}
-                                </span>
-                                <span className="flex items-center">
-                                    <span className="p-2 mr-5 bg-sky text-blue text-10">포인트</span>
-                                    <span className="text-blue">적립 완료</span>
-                                    {/* <FontAwesomeIcon icon={faAngleRight} className="ml-20" /> */}
-                                </span>
-                            </li>
-
                             <div className="grid grid-flow-col w-[400px]">
                                 <div className="flex flex-col text-[#8b8b8b]">
                                     <span>주문 번호</span>
@@ -94,16 +78,21 @@ export default function OrderList() {
                             }}
                         >
                             {orderGroup.map((item, index) => {
+                                const { caseType, color } = parseCaseAndColor(item.image)
                                 const { bg, text } = getColorScheme(index);
 
                                 return (
-                                    <SwiperSlide key={`${item.product_id}-${index}`}>
+                                    <SwiperSlide
+                                        key={`${item.product_id}-${index}`}
+                                        onClick={() => {
+                                            navigate(`/detail/${item.product_id}`, {
+                                                state: { activeCase: caseType, activeColor: color },
+                                            });
+                                            window.scrollTo(0, 0);
+                                        }}
+                                    >
                                         <SeriesItem
-                                            onClick={() => {
-                                                navigate(`/detail/${item.product_id}`);
-                                                window.scrollTo(0, 0);
-                                            }}
-                                            className={`p-8 pb-16 h-[250px] w-[200px] rounded-16 ${bg}`}
+                                            className={`p-8 pb-16 h-[250px] cursor-pointer w-[200px] rounded-16 ${bg}`}
                                             imageSrc={item.image}
                                             titleClassName={`mt-10 text-16 font-bold text-left ${text}`}
                                             title={item.product_name}

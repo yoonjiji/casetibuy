@@ -25,7 +25,7 @@ export default function PaymentPage() {
         if (isLoggedIn) {
             getCartList();
             const token = localStorage.getItem("token");
-            fetch("http://localhost:9000/member/userinfo", {
+            fetch("http://54.180.155.70:9000/member/userinfo", {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json",
@@ -116,10 +116,9 @@ export default function PaymentPage() {
 
         try {
             const response = await axios.post(
-                "http://localhost:9000/order/checkout",
+                "http://54.180.155.70:9000/order/checkout",
                 orderData
             );
-            console.log("✅ [DEBUG] 주문 응답:", response.data);
             if (response.status === 201) {
                 setCartList([]); // 장바구니 비우기
                 setCartCount(0);
@@ -139,12 +138,11 @@ export default function PaymentPage() {
     const handleKakaoPayPayment = async (orderData) => {
         const id = localStorage.getItem("user_id");
         try {
-            const res = await axios.post("http://localhost:9000/payment/qr", {
+            const res = await axios.post("http://54.180.155.70:9000/payment/qr", {
                 id: id,
                 item_name: "테스트 상품",
                 total_amount: totalPrice,
             });
-            console.log("✅ [DEBUG] 카카오페이 응답:", res.data);
             if (res.data.next_redirect_pc_url) {
                 // 승인 URL로 리다이렉트하기 전에 필요한 값들을 localStorage에 저장합니다.
                 localStorage.setItem("orderData", JSON.stringify(orderData));
@@ -163,10 +161,9 @@ export default function PaymentPage() {
         try {
             const finalOrderData = { ...orderData, tid };
             const orderResponse = await axios.post(
-                "http://localhost:9000/order/checkout",
+                "http://54.180.155.70:9000/order/checkout",
                 finalOrderData
             );
-            console.log("✅ [DEBUG] 최종 주문 응답:", orderResponse.data);
             if (orderResponse.status === 201) {
                 setCartList([]); // 장바구니 비우기
                 localStorage.setItem("orderData", JSON.stringify(finalOrderData));
@@ -187,13 +184,12 @@ export default function PaymentPage() {
         const tid = localStorage.getItem("tid");
         const totalPrice = localStorage.getItem("total_price");
         try {
-            const res = await axios.post("http://localhost:9000/payment/approve", {
+            const res = await axios.post("http://54.180.155.70:9000/payment/approve", {
                 pg_token: pgToken,
                 tid,
                 id,
                 total_amount: totalPrice,
             });
-            console.log("✅ [DEBUG] 카카오페이 승인 성공:", res.data);
             localStorage.removeItem("tid");
             localStorage.removeItem("total_price");
             // localStorage에 저장했던 주문 데이터를 가져와 DB에 주문 생성
@@ -240,7 +236,6 @@ export default function PaymentPage() {
             case_type: item.cname,
             product_image: item.image,
         }));
-        console.log('카트리스트',cartList);
         
 
         const orderData = {
@@ -253,8 +248,6 @@ export default function PaymentPage() {
             cartItems,
         };
 
-        console.log("🔍 [DEBUG] 주문 데이터:", orderData);
-
         if (paymentMethod === "creditCard") {
             await handleCreditCardPayment(orderData);
         } else if (paymentMethod === "kakaoPay") {
@@ -262,10 +255,7 @@ export default function PaymentPage() {
         }
     };
 
-    
-
-
-    return (
+        return (
         <div className="flex justify-center w-full min-h-screen mt-66">
             <div className="flex w-full max-w-[1000px] min-h-screen font-sans">
                 <div className="w-[60%] p-8">

@@ -17,7 +17,7 @@ export default function Search({
     e.preventDefault();
     const search = e.target.elements.search.value;
     const result = await getSearch(search);
-    navigate("/homelist", { state: { searchResult: result } });
+    navigate("/products", { state: { searchResult: result } });
     setSearchTerm(search);
     onClose();
   };

@@ -51,7 +51,6 @@ export function DetailProvider({ children }) {
   const availableColorKeys =
     activeCase && matchCaseColor[activeCase] ? matchCaseColor[activeCase] : Object.keys(matchColor);
 
-
   const value = {
     activeCase,
     setActiveCase,

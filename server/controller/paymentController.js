@@ -3,7 +3,6 @@ import axios from "axios";
 // 카카오페이 QR 결제 요청 함수
 export const paymentKakaopay = async (req, res) => {
     try {
-        console.log(req.body);
         const { id, item_name, total_amount } = req.body;
         const KAKAO_ADMIN_KEY = "ec4f35c9da872eac46fb9893573e4a90";
 
@@ -20,9 +19,9 @@ export const paymentKakaopay = async (req, res) => {
                 quantity: 1,
                 total_amount,
                 tax_free_amount: 0,
-                approval_url: "http://localhost:3000/order-success",
-                cancel_url: "http://localhost:3000/payment/cancel",
-                fail_url: "http://localhost:3000/payment/fail",
+                approval_url: "http://54.180.155.70:3000/order-success",
+                cancel_url: "http://54.180.155.70:3000/payment/cancel",
+                fail_url: "http://54.180.155.70:3000/payment/fail",
             },
             {
                 headers: {
@@ -31,7 +30,6 @@ export const paymentKakaopay = async (req, res) => {
                 },
             }
         );
-        console.log("qr-->", response.data);
         // partner_order_id를 응답에 포함시켜 클라이언트가 저장할 수 있도록 합니다.
         res.json({ ...response.data, partner_order_id });
     } catch (error) {
@@ -62,8 +60,6 @@ export const paymentKakaopayApprove = async (req, res) => {
                 },
             }
         );
-
-        console.log("✅ [DEBUG] 카카오페이 승인 응답:", response.data);
         res.json({
             message: "카카오페이 결제 승인 성공",
             partner_order_id: response.data.partner_order_id,

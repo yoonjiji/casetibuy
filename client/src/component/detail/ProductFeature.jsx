@@ -1,7 +1,5 @@
-import axios from 'axios';
-import React, { useContext, useEffect } from 'react';
+import React, { useContext } from 'react';
 import { DetailContext } from '../../context/DetailContext';
-import { useDetail } from '../../hooks/useDetail';
 
 export default function ProductFeatures() {
     const { activeCase, casesData } = useContext(DetailContext);
@@ -24,8 +22,6 @@ export default function ProductFeatures() {
                             <p className='text-[max(1.563vw,12px)] mt-[16px] whitespace-pre-line text-center'>
                                 {item.desc}</p>
                         </div>
-
-
                     )
                 }
             </div>

@@ -36,7 +36,6 @@ export const getItems = async (req, res) => {
  * 장바구니 추가
  */
 export const addCart = async (req, res) => {
-  console.log("장바구니 추가 요청:", req.body);
   const result = await repository.addCart(req.body);
   res.json(result);
   res.end();
@@ -46,7 +45,6 @@ export const addCart = async (req, res) => {
  * 유저 아이디 조회
  */
 export const getId = async (req, res) => {
-  console.log("유저 아이디:", req.body);
   const result = await repository.getId(req.body);
   res.json(result);
 };

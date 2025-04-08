@@ -24,7 +24,7 @@ export function useLogin() {
     }
 
     try {
-      const response = await axios.post("http://localhost:9000/member/login", {
+      const response = await axios.post("http://54.180.155.70:9000/member/login", {
         // axios.post 사용
         id: username,
         pwd: password,
@@ -33,7 +33,6 @@ export function useLogin() {
       if (response.status === 200) {
         // axios는 성공 시 status가 200번대, response.data로 데이터 접근
         const data = response.data;
-        console.log("로그인 성공:", data);
         if (data.token) {
           localStorage.setItem("token", data.token);
           localStorage.setItem("user_id", data.id); /// <<< 지혜 / 추가 : 로컬스토리지 아이디 저장>>>
@@ -41,11 +40,8 @@ export function useLogin() {
           alert("로그인 성공!");
           window.location.href = "/";
         } else {
-          setLoginError("존재하지 않는 아이디입니다.");
+          setLoginError("아이디 또는 비밀번호를 확인해주세요.");
         }
-      } else {
-        // axios는 HTTP 에러 상태 코드 (4xx, 5xx)를 throw error로 처리하지 않습니다.
-        // response.status로 상태 코드를 직접 확인해야 합니다. (하지만 이 코드에서는 try-catch로 에러를 잡아낼 것이므로 else 블록은 사실상 불필요)
       }
     } catch (error) {
       console.error("로그인 실패:", error);

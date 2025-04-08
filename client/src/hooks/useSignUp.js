@@ -59,7 +59,7 @@ export function useSignUp() {
         }
 
         try {
-            const response = await axios.post('http://localhost:9000/member/signup', {
+            const response = await axios.post('http://54.180.155.70:9000/member/signup', {
                 name: name,
                 birthdate: birthdate,
                 email: email,
@@ -70,7 +70,6 @@ export function useSignUp() {
 
             if (response.status === 200) {
                 const data = response.data;
-                console.log("회원가입 성공:", data);
                 alert("회원가입 성공!");
                 window.location.href = "/login";
             } else {
@@ -96,7 +95,7 @@ export function useSignUp() {
         setIsIdAvailable(false);
 
         try {
-            const response = await axios.post('http://localhost:9000/member/idcheck', {
+            const response = await axios.post('http://54.180.155.70:9000/member/idcheck', {
                 id: username
             });
 

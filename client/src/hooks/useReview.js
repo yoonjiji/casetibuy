@@ -1,20 +1,19 @@
-import React, { useCallback, useContext, useMemo, useState } from 'react';
+import { useCallback, useContext, useMemo, useState } from 'react';
 import { ReviewContext } from '../context/ReviewContext';
 import axios from 'axios';
 import useOrder from './useOrder';
 import { DetailContext } from '../context/DetailContext';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
 export default function useReview() {
-  const { rating, setRating, comment, setComment, setReviewForm } = useContext(ReviewContext);
-  const { orderList, getOrderList } = useOrder();
+  const { rating, comment, setReviewForm } = useContext(ReviewContext);
+  const { getOrderList } = useOrder();
   const { detail } = useContext(DetailContext);
   const [reviewList, setReviewList] = useState([]);
-  const navigate = useNavigate();
   const { pid } = useParams();
 
   const getReviewList = useCallback(async () => {
-    const result = await axios.get("http://localhost:9000/review/list", {
+    const result = await axios.get("http://54.180.155.70:9000/review/list", {
       params: { pid: pid },
       t: new Date().getTime() // 캐시 우회를 위한 타임스탬프 추가
     });
@@ -61,7 +60,7 @@ export default function useReview() {
       comment: comment         // 리뷰 내용
     };
     axios
-      .post('http://localhost:9000/review/new', sendData)
+      .post('http://54.180.155.70:9000/review/new', sendData)
       .then(async res => {
         if (res.data.result_rows === 1) {
           alert("리뷰가 등록되었습니다.");
@@ -76,7 +75,6 @@ export default function useReview() {
         alert("리뷰 등록 실패");
         console.log(err)
       });
-    console.log("리뷰 제출:", sendData);
     return sendData;
   };
 

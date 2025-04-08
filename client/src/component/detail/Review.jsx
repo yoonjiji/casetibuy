@@ -1,8 +1,7 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useEffect } from 'react';
 import ReviewBars from './review/ReviewBars.jsx';
 import ReviewForm from './review/ReviewForm.jsx';
 import ReviewList from './review/ReviewList.jsx';
-import axios from 'axios';
 import { ReviewContext } from '../../context/ReviewContext.js';
 import useReview from '../../hooks/useReview.js';
 import useOrder from '../../hooks/useOrder.js';
@@ -10,10 +9,10 @@ import { DetailContext } from '../../context/DetailContext.js';
 import StarRating from './review/StarRating.jsx';
 
 export default function Review() {
-    const { reviewForm, setReviewForm, rating, setRating, comment, setComment } = useContext(ReviewContext);
+    const { reviewForm, setReviewForm, setRating, setComment } = useContext(ReviewContext);
     const { reviewList, getReviewList, averageRating, calculateCounts } = useReview();
     const { detail } = useContext(DetailContext);
-    const { getOrderList, orderList } = useOrder();
+    const { getOrderList } = useOrder();
 
     useEffect(() => {
         getOrderList();
@@ -25,8 +24,6 @@ export default function Review() {
     }, [detail.pid, setReviewForm]);
 
     const counts = calculateCounts(reviewList);
-    console.log(reviewList);
-
 
     return (
         <div className='mx-auto mt-90 max-w-[1140px] text-center'>
@@ -64,7 +61,7 @@ export default function Review() {
                 </div>
             </div>
             {/* 별점갯수 */}
-            <div className='mt-50 w-[969px] mx-auto'>
+            <div className='mt-50 max-w-[969px] mx-auto'>
                 <div className='font-bold text-left text-18'>
                     별점순으로 정렬
                 </div>

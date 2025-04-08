@@ -34,11 +34,11 @@ export default function SlideItem({
           <img src={image} alt={title} className={`w-full ${cround}`} />
         </div>
         <div
-          className={`w-full h-[200px] flex flex-col items-start justify-between text-start ${contentPadding}`}
+          className={`w-full md:h-[200px] h-[230px] flex flex-col items-start justify-between text-start ${contentPadding}`}
         >
           <span className={`${labelStyle}`}>{label}</span>
           <div>
-            <h2 className={`mt-10 font-bold text-26`}>{title}</h2>
+            <h2 className={`mt-10 font-bold md:text-26 text-18`}>{title}</h2>
             <p>{description}</p>
           </div>
           <button className={`mt-30 ${btnStyle} ${btnColor}`}>{btnText}</button>

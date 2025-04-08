@@ -1,4 +1,3 @@
-// Impact.jsx
 import React from 'react';
 import InfoBlock from './InfoBlock';
 

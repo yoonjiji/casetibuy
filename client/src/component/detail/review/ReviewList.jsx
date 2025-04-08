@@ -10,8 +10,6 @@ export default function ReviewList() {
         getReviewList();
     }, [getReviewList]);
 
-    
-
     return (
         <>
             <div className='w-[90%] mx-auto'>

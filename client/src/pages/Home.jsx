@@ -62,7 +62,6 @@ export default function Home() {
                 el: `.custom-pagination-${key}`,
                 clickable: true,
                 renderBullet: (index, className) => {
-                  console.log("bullet class:", className);
                   return `<span class="${className} custom-bullet"></span>`;
                 },
               }}

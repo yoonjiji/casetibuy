@@ -19,10 +19,8 @@ export default function Series() {
     setSearchResults(null);   // 검색 결과 초기화
     setSelectedSeries(series);
     setClassifyFilter('')
-    setSelectedItem('')
+    setSelectedItem('') 
     setCategory(false)
-
-    // 여기서 series.kinds에 따라 selectList나 필터링 작업을 추가할 수 있음
   };
   return (
     <div className="px-32 pb-16 pt-98">
@@ -39,7 +37,7 @@ export default function Series() {
               key={index}
               onClick={() => {
                 handleList(item.kinds);
-                navigate("/homelist");
+                navigate("/products");
                 handleSeriesChange(item);
                 
               }}

@@ -23,7 +23,7 @@ export default function CartItem({ cartList, updateCartList, deleteCartItem }) {
               </div>
               <div className={`flex flex-col items-start gap-12 w-full`}>
                 <div className="flex items-center justify-between w-full">
-                  <p className={`font-light text-14`}>{item.pname}</p>
+                  <p className={`font-light text-14 w-[160px]`}>{item.pname}</p>
                   {/* 장바구니 삭제 */}
                   <div className="flex items-center justify-end">
                     <button

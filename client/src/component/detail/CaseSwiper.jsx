@@ -25,7 +25,7 @@ export default function CaseSwiper({ detailImage, hasMatchingDetailImage }) {
         {Object.keys(casesData).map((caseId) => {
           // detailImage 배열에 해당 케이스 타입(caseId)의 이미지가 있는지 확인
           const hasImage = hasMatchingDetailImage(detailImage, parseCaseAndColor, 'caseType', caseId);
-
+          
           // 해당 케이스 타입에 맞는 이미지가 없으면 해당 슬라이드는 렌더링하지 않음
           if (!hasImage) return null;
 

@@ -4,7 +4,6 @@ import axios from "axios";
 import { CartContext } from "../context/CartContext.js";
 import { DetailContext } from "../context/DetailContext.js";
 
-
 export default function OrderSuccessPage() {
     const [orderData, setOrderData] = useState(null);
     const [searchParams] = useSearchParams();
@@ -12,8 +11,6 @@ export default function OrderSuccessPage() {
     const { setCartList, setCartCount } = useContext(CartContext);
     const pg_token = searchParams.get("pg_token");
     const { matchColor } = useContext(DetailContext);
-
-    // console.log(`pg_token: ${pg_token}`);
 
     // localStorage에서 주문 데이터를 불러옵니다.
     useEffect(() => {
@@ -32,7 +29,7 @@ export default function OrderSuccessPage() {
             const partner_order_id = localStorage.getItem("partner_order_id");
 
             axios
-                .post("http://localhost:9000/payment/approve", {
+                .post("http://54.180.155.70:9000/payment/approve", {
                     pg_token,
                     tid,
                     id: user_id,
@@ -40,15 +37,13 @@ export default function OrderSuccessPage() {
                     partner_order_id, // 클라이언트가 저장한 partner_order_id 사용
                 })
                 .then((res) => {
-                    console.log("✅ [DEBUG] 카카오페이 승인 성공:", res.data);
                     // 승인 후 localStorage에 저장된 주문 데이터를 DB로 전송
                     const storedOrder = localStorage.getItem("orderData");
                     if (storedOrder) {
                         const orderObj = JSON.parse(storedOrder);
                         axios
-                            .post("http://localhost:9000/order/checkout", orderObj)
+                            .post("http://54.180.155.70:9000/order/checkout", orderObj)
                             .then((orderRes) => {
-                                console.log("✅ [DEBUG] 주문 생성 응답:", orderRes.data);
                                 localStorage.removeItem("tid");
                                 localStorage.removeItem("total_price");
                                 localStorage.removeItem("partner_order_id");
@@ -86,9 +81,6 @@ export default function OrderSuccessPage() {
                     {orderData ? (
                         <>
                             <div>
-                                {/* <p className="mb-10 text-lg font-semibold">
-                            결제 방법: {orderData.payment_method}
-                        </p> */}
                                 <p className="mb-10">
                                     배송지: {orderData.address}, {orderData.detail_address}
                                 </p>

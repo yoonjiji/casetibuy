@@ -19,7 +19,7 @@ export default function ReviewBars({ counts }) {
         return (
           <div key={rating} className="flex items-center gap-18 mt-18">
             <div className="font-bold text-left w-45 text-12">{rating} 별점</div>
-            <div className="flex-1 h-15 bg-gray2">
+            <div className="flex-1 h-15 bg-gray2 min-w-[200px]">
               <div
                 className="h-full bg-blue"
                 style={{ width: barWidth }}

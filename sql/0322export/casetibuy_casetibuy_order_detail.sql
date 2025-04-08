@@ -47,7 +47,7 @@ CREATE TABLE `casetibuy_order_detail` (
 
 LOCK TABLES `casetibuy_order_detail` WRITE;
 /*!40000 ALTER TABLE `casetibuy_order_detail` DISABLE KEYS */;
-INSERT INTO `casetibuy_order_detail` VALUES (1,2,4,'Tom Character Case',1,122000,'black','맥세이프 호환 임팩트 링 스탠드 케이스','http://localhost:9000/upload_files\\1742627987471_747067579iphone16p_tom_and_jerry_case_ring_color_black1.webp','iphone');
+INSERT INTO `casetibuy_order_detail` VALUES (1,2,4,'Tom Character Case',1,122000,'black','맥세이프 호환 임팩트 링 스탠드 케이스','http://54.180.155.70:9000/upload_files\\1742627987471_747067579iphone16p_tom_and_jerry_case_ring_color_black1.webp','iphone');
 /*!40000 ALTER TABLE `casetibuy_order_detail` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

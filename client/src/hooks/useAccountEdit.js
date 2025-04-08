@@ -50,7 +50,7 @@ export default function useAccountEdit() {
     if (!token) return;
 
     axios
-      .get("http://localhost:9000/member/userinfo", {
+      .get("http://54.180.155.70:9000/member/userinfo", {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((res) => {
@@ -139,7 +139,7 @@ export default function useAccountEdit() {
     try {
       const token = localStorage.getItem("token");
       const response = await axios.post(
-        "http://localhost:9000/member/checkPassword",
+        "http://54.180.155.70:9000/member/checkPassword",
         { currentPassword: trimmed },
         { headers: { Authorization: `Bearer ${token}` } }
       );
@@ -246,7 +246,7 @@ export default function useAccountEdit() {
         currentPassword: currentPassword.trim(),
         newPassword: isChangingPassword ? newPassword.trim() : "",
       };
-      const res = await axios.put("http://localhost:9000/member/update", body, {
+      const res = await axios.put("http://54.180.155.70:9000/member/update", body, {
         headers: { Authorization: `Bearer ${token}` },
       });
       if (res.status === 200) {

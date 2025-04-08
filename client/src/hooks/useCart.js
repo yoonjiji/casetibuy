@@ -6,11 +6,9 @@ export const useCart = () => {
   const {
     isCartOpen,
     setIsCartOpen,
-    cartList,
     setCartList,
     cartCount,
     setCartCount,
-    totalPrice,
     setTotalPrice,
   } = useContext(CartContext);
 
@@ -19,7 +17,7 @@ export const useCart = () => {
    */
   const getCartList = async () => {
     const id = localStorage.getItem("user_id"); // <<< 지혜 / 추가 >>>
-    const result = await axios.post("http://localhost:9000/cart/items", {
+    const result = await axios.post("http://54.180.155.70:9000/cart/items", {
       id: id,
     });
     setCartList(result.data);
@@ -31,10 +29,9 @@ export const useCart = () => {
    * 장바구니 새로운 아이템 저장
    */
   const saveToCartList = async (formData) => {
-    const result = await axios.post("http://localhost:9000/cart/add", formData);
+    const result = await axios.post("http://54.180.155.70:9000/cart/add", formData);
     if (result.data.result_rows) {
       setCartCount(cartCount + 1);
-      console.log("서버로 보낼 데이터:", formData);
       getCartList();
     }
     return result.data.result_rows;
@@ -44,7 +41,7 @@ export const useCart = () => {
    * 장바구니 아이템 수량 업데이트
    */
   const updateCartList = async (cid, type) => {
-    const result = await axios.put("http://localhost:9000/cart/updateQty", {
+    const result = await axios.put("http://54.180.155.70:9000/cart/updateQty", {
       cid: cid,
       type: type,
     });
@@ -57,7 +54,7 @@ export const useCart = () => {
    */
   const getCount = async () => {
     const id = localStorage.getItem("user_id"); // <<< 지혜 / 추가 >>>
-    const result = await axios.post("http://localhost:9000/cart/count", {
+    const result = await axios.post("http://54.180.155.70:9000/cart/count", {
       id: id,
     });
     setCartCount(result.data.count);
@@ -75,7 +72,7 @@ export const useCart = () => {
    * 장바구니 아이템 삭제
    */
   const deleteCartItem = async (cid) => {
-    const result = await axios.delete("http://localhost:9000/cart/deleteItem", {
+    const result = await axios.delete("http://54.180.155.70:9000/cart/deleteItem", {
       data: { cid: cid },
     });
     result.data.result_rows && getCartList();

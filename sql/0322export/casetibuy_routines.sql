@@ -50,7 +50,7 @@ SET character_set_client = @saved_cs_client;
 /*!50001 SET collation_connection      = utf8mb4_0900_ai_ci */;
 /*!50001 CREATE ALGORITHM=UNDEFINED */
 /*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
-/*!50001 VIEW `view_cart_list` AS select `cc`.`cid` AS `cid`,`cc`.`cname` AS `cname`,`cc`.`qty` AS `qty`,`cc`.`kinds` AS `kinds`,`cc`.`color` AS `color`,`cc`.`caseType` AS `caseType`,`cc`.`price` AS `price`,`cm`.`id` AS `id`,`cp`.`pid` AS `pid`,`cp`.`pname` AS `pname`,concat('http://localhost:9000/',`cc`.`image`) AS `image` from ((`casetibuy_cart` `cc` join `casetibuy_member` `cm`) join `casetibuy_product` `cp`) where ((`cc`.`id` = `cm`.`id`) and (`cc`.`pid` = `cp`.`pid`)) */;
+/*!50001 VIEW `view_cart_list` AS select `cc`.`cid` AS `cid`,`cc`.`cname` AS `cname`,`cc`.`qty` AS `qty`,`cc`.`kinds` AS `kinds`,`cc`.`color` AS `color`,`cc`.`caseType` AS `caseType`,`cc`.`price` AS `price`,`cm`.`id` AS `id`,`cp`.`pid` AS `pid`,`cp`.`pname` AS `pname`,concat('http://54.180.155.70:9000/',`cc`.`image`) AS `image` from ((`casetibuy_cart` `cc` join `casetibuy_member` `cm`) join `casetibuy_product` `cp`) where ((`cc`.`id` = `cm`.`id`) and (`cc`.`pid` = `cp`.`pid`)) */;
 /*!50001 SET character_set_client      = @saved_cs_client */;
 /*!50001 SET character_set_results     = @saved_cs_results */;
 /*!50001 SET collation_connection      = @saved_col_connection */;

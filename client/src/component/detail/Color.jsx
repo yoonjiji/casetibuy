@@ -28,9 +28,10 @@ export default function Color({ detail, detailImage, hasMatchingDetailImage
                             }}                        >
                             {availableColorKeys.map((colorKey) => {
                                 const hasColor = hasMatchingDetailImage(detailImage, parseCaseAndColor, 'color', colorKey);
+                                
                                 // 해당 케이스 타입에 맞는 이미지가 없으면 해당 슬라이드는 렌더링하지 않음
                                 if (!hasColor) return null;
-
+                                
                                 return (
                                     <SwiperSlide key={colorKey} className='overflow-visible'>
                                         <div
